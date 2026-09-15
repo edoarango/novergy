@@ -126,7 +126,7 @@ body {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 16px;
+  bottom: max(14px, env(safe-area-inset-bottom));
 
   padding: 0 16px;
 
@@ -139,35 +139,214 @@ body {
     0 2px 8px rgba(0, 0, 0, 0.75);
 }
 
+
+/* TABLETS */
+@media (max-width: 900px) {
+
+  .hero-content {
+    width: 94vw;
+    padding: 0 20px;
+    transform: translateY(-3vh);
+  }
+
+  .logo {
+    width: min(58vw, 390px);
+    margin-bottom: 22px;
+  }
+
+  .descriptor {
+    font-size: clamp(1.15rem, 3vw, 1.5rem);
+    margin-bottom: 20px;
+  }
+
+  .contact {
+    font-size: 1rem;
+  }
+}
+
+
+/* MÓVILES */
 @media (max-width: 640px) {
 
   .hero {
-    background-position: 52% center;
+    min-height: 100svh;
+
+    background-position:
+      50% center;
   }
 
   .hero-content {
     width: 94vw;
-    padding: 0 14px;
-    transform: translateY(-2vh);
+
+    padding:
+      0 16px;
+
+    transform:
+      translateY(-1.5vh);
   }
 
   .logo {
-    width: min(68.4vw, 351px);
-    margin-bottom: 18px;
+    width:
+      min(72vw, 320px);
+
+    margin:
+      0 auto 18px;
 
     filter:
-      drop-shadow(0 2px 4px rgba(0, 0, 0, 0.32))
-      drop-shadow(0 5px 12px rgba(0, 0, 0, 0.18));
+      drop-shadow(0 2px 4px rgba(0, 0, 0, 0.34))
+      drop-shadow(0 4px 10px rgba(0, 0, 0, 0.18));
   }
 
   .descriptor {
-    margin-bottom: 18px;
+    margin:
+      0 0 18px;
+
+    font-size:
+      clamp(1rem, 5.1vw, 1.35rem);
+
+    line-height:
+      1.25;
+
+    letter-spacing:
+      0.015em;
+
+    padding:
+      0 6px;
   }
 
   .contact {
-    padding: 11px 18px;
+    width:
+      auto;
+
+    max-width:
+      90vw;
+
+    min-height:
+      46px;
+
+    padding:
+      10px 18px;
+
+    font-size:
+      clamp(0.92rem, 4.1vw, 1rem);
+
+    white-space:
+      normal;
+
+    text-align:
+      center;
+
+    line-height:
+      1.2;
+  }
+
+  .footer {
+    bottom:
+      max(12px, env(safe-area-inset-bottom));
+
+    font-size:
+      0.72rem;
   }
 }
+
+
+/* MÓVILES MUY ESTRECHOS */
+@media (max-width: 390px) {
+
+  .hero {
+    background-position:
+      50% center;
+  }
+
+  .hero-content {
+    width:
+      96vw;
+
+    padding:
+      0 10px;
+
+    transform:
+      translateY(-1vh);
+  }
+
+  .logo {
+    width:
+      min(74vw, 285px);
+
+    margin-bottom:
+      16px;
+  }
+
+  .descriptor {
+    font-size:
+      clamp(0.98rem, 5.4vw, 1.18rem);
+
+    margin-bottom:
+      16px;
+  }
+
+  .contact {
+    max-width:
+      92vw;
+
+    padding:
+      10px 16px;
+
+    font-size:
+      0.92rem;
+  }
+
+  .footer {
+    font-size:
+      0.68rem;
+  }
+}
+
+
+/* TELÉFONOS EN HORIZONTAL */
+@media (max-height: 520px) and (orientation: landscape) {
+
+  .hero-content {
+    transform:
+      translateY(-1vh);
+  }
+
+  .logo {
+    width:
+      min(34vw, 260px);
+
+    margin-bottom:
+      10px;
+  }
+
+  .descriptor {
+    margin-bottom:
+      10px;
+
+    font-size:
+      1rem;
+  }
+
+  .contact {
+    min-height:
+      40px;
+
+    padding:
+      8px 16px;
+
+    font-size:
+      0.9rem;
+  }
+
+  .footer {
+    bottom:
+      6px;
+
+    font-size:
+      0.65rem;
+  }
+}
+
 
 @media (prefers-reduced-motion: reduce) {
 
