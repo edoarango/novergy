@@ -36,9 +36,9 @@ body {
 
   background: linear-gradient(
     180deg,
-    rgba(0, 18, 10, 0.04) 0%,
-    rgba(0, 18, 10, 0.08) 55%,
-    rgba(0, 18, 10, 0.20) 100%
+    rgba(0, 18, 10, 0.02) 0%,
+    rgba(0, 18, 10, 0.05) 55%,
+    rgba(0, 18, 10, 0.16) 100%
   );
 }
 
@@ -47,8 +47,6 @@ body {
   padding: 0 24px;
   text-align: center;
 
-  transform: translateY(-4vh);
-
   background: transparent;
   border: none;
   box-shadow: none;
@@ -56,20 +54,41 @@ body {
   -webkit-backdrop-filter: none;
 }
 
+
+/* =========================
+   LOGOTIPO NOVERGY
+   ========================= */
+
 .logo {
+  position: relative;
+
+  /* SUBE EL LOGO HACIA EL CIELO */
+  top: -125px;
+
   display: block;
 
   width: min(48.6vw, 423px);
   height: auto;
 
-  margin: 0 auto 26px;
+  margin: 0 auto;
 
   filter:
     drop-shadow(0 2px 4px rgba(0, 0, 0, 0.32))
     drop-shadow(0 5px 12px rgba(0, 0, 0, 0.18));
 }
 
+
+/* =========================
+   DESCRIPTOR
+   ========================= */
+
 .descriptor {
+  position: relative;
+
+  /* BAJA EL TEXTO ENTRE
+     LOS CUBOS INFERIORES */
+  top: 75px;
+
   margin: 0;
 
   font-size: clamp(1.2rem, 2.3vw, 1.7rem);
@@ -83,33 +102,46 @@ body {
     0 5px 18px rgba(0, 0, 0, 0.48);
 }
 
+
+/* =========================
+   CALL TO ACTION
+   ========================= */
+
 .contact {
   position: relative;
 
-  /* CTA BAJADO AL CENTRO DEL CONECTOR ROSCADO */
-  top: 155px;
+  /* BAJA EL CTA HACIA
+     EL CENTRO DEL CONECTOR */
+  top: 185px;
 
   display: inline-flex;
   align-items: center;
   justify-content: center;
 
-  min-height: 48px;
-  padding: 11px 20px;
+  /* BOTÓN MÁS DELGADO */
+  min-height: 36px;
+
+  padding:
+    7px 18px;
 
   border-radius: 999px;
 
   color: #ffffff;
   text-decoration: none;
 
-  font-size: clamp(0.98rem, 1.7vw, 1.08rem);
+  font-size:
+    clamp(0.88rem, 1.35vw, 0.98rem);
+
   font-weight: 600;
 
-  background: rgba(0, 135, 82, 0.86);
+  background:
+    rgba(0, 135, 82, 0.88);
 
-  border: 1px solid rgba(255, 255, 255, 0.40);
+  border:
+    1px solid rgba(255, 255, 255, 0.38);
 
   box-shadow:
-    0 3px 10px rgba(0, 0, 0, 0.26);
+    0 2px 7px rgba(0, 0, 0, 0.24);
 
   transition:
     transform 160ms ease,
@@ -119,74 +151,112 @@ body {
 .contact:hover,
 .contact:focus-visible {
   transform: translateY(-1px);
-  background: rgba(0, 157, 95, 0.96);
+
+  background:
+    rgba(0, 157, 95, 0.96);
 }
 
 .contact:focus-visible {
-  outline: 3px solid rgba(255, 255, 255, 0.85);
+  outline:
+    3px solid rgba(255, 255, 255, 0.85);
+
   outline-offset: 3px;
 }
 
+
+/* =========================
+   FOOTER
+   ========================= */
+
 .footer {
   position: absolute;
+
   left: 0;
   right: 0;
-  bottom: max(14px, env(safe-area-inset-bottom));
 
-  padding: 0 16px;
+  bottom:
+    max(14px, env(safe-area-inset-bottom));
+
+  padding:
+    0 16px;
 
   text-align: center;
-  font-size: 0.82rem;
 
-  color: rgba(255, 255, 255, 0.90);
+  font-size:
+    0.82rem;
+
+  color:
+    rgba(255, 255, 255, 0.90);
 
   text-shadow:
     0 2px 8px rgba(0, 0, 0, 0.75);
 }
 
 
-/* TABLETS */
+/* =========================
+   TABLETS
+   ========================= */
+
 @media (max-width: 900px) {
 
   .hero-content {
     width: 94vw;
     padding: 0 20px;
-    transform: translateY(-3vh);
   }
 
   .logo {
-    width: min(58vw, 390px);
-    margin-bottom: 22px;
+    top: -95px;
+
+    width:
+      min(58vw, 390px);
   }
 
   .descriptor {
-    font-size: clamp(1.15rem, 3vw, 1.5rem);
+    top: 60px;
+
+    font-size:
+      clamp(1.15rem, 3vw, 1.5rem);
   }
 
   .contact {
-    top: 145px;
-    font-size: 1rem;
+    top: 165px;
+
+    min-height: 36px;
+
+    padding:
+      7px 17px;
+
+    font-size:
+      0.94rem;
   }
 }
 
 
-/* MÓVILES */
+/* =========================
+   MÓVILES
+   ========================= */
+
 @media (max-width: 640px) {
 
   .hero {
     min-height: 100svh;
-    background-position: 50% center;
+
+    background-position:
+      50% center;
   }
 
   .hero-content {
     width: 94vw;
-    padding: 0 18px;
-    transform: translateY(-1vh);
+
+    padding:
+      0 18px;
   }
 
   .logo {
-    width: min(64vw, 285px);
-    margin: 0 auto 16px;
+    top: -85px;
+
+    width:
+      min(64vw, 285px);
 
     filter:
       drop-shadow(0 2px 4px rgba(0, 0, 0, 0.34))
@@ -194,105 +264,143 @@ body {
   }
 
   .descriptor {
+    top: 55px;
+
     margin: 0;
+
+    padding:
+      0 12px;
 
     font-size:
       clamp(0.98rem, 4.7vw, 1.22rem);
 
-    line-height: 1.22;
-    letter-spacing: 0.01em;
+    line-height:
+      1.22;
 
-    padding: 0 12px;
+    letter-spacing:
+      0.01em;
   }
 
   .contact {
-    top: clamp(140px, 11vh, 175px);
+    top: 175px;
 
-    max-width: 86vw;
-    min-height: 42px;
+    max-width:
+      88vw;
 
-    padding: 9px 16px;
+    min-height:
+      34px;
+
+    padding:
+      7px 15px;
 
     font-size:
-      clamp(0.88rem, 3.8vw, 0.98rem);
+      clamp(0.84rem, 3.6vw, 0.94rem);
 
-    line-height: 1.15;
-    text-align: center;
-    white-space: normal;
+    line-height:
+      1.1;
+
+    text-align:
+      center;
+
+    white-space:
+      normal;
   }
 
   .footer {
     bottom:
       max(10px, env(safe-area-inset-bottom));
 
-    font-size: 0.70rem;
+    font-size:
+      0.70rem;
   }
 }
 
 
-/* MÓVILES MUY ESTRECHOS */
+/* =========================
+   MÓVILES MUY ESTRECHOS
+   ========================= */
+
 @media (max-width: 390px) {
 
   .hero-content {
     width: 96vw;
-    padding: 0 12px;
 
-    transform: translateY(-0.5vh);
+    padding:
+      0 12px;
   }
 
   .logo {
-    width: min(66vw, 270px);
-    margin-bottom: 14px;
+    top: -70px;
+
+    width:
+      min(66vw, 270px);
   }
 
   .descriptor {
+    top: 50px;
+
     font-size:
       clamp(0.95rem, 5vw, 1.12rem);
   }
 
   .contact {
-    top: clamp(130px, 10vh, 160px);
+    top: 160px;
 
-    max-width: 90vw;
-    padding: 9px 14px;
+    max-width:
+      90vw;
 
-    font-size: 0.88rem;
+    padding:
+      7px 13px;
+
+    font-size:
+      0.84rem;
   }
 
   .footer {
-    font-size: 0.66rem;
+    font-size:
+      0.66rem;
   }
 }
 
 
-/* TELÉFONOS EN HORIZONTAL */
+/* =========================
+   MÓVIL HORIZONTAL
+   ========================= */
+
 @media (max-height: 520px) and (orientation: landscape) {
 
-  .hero-content {
-    transform: translateY(-1vh);
-  }
-
   .logo {
-    width: min(34vw, 250px);
-    margin-bottom: 8px;
+    top: -35px;
+
+    width:
+      min(34vw, 250px);
   }
 
   .descriptor {
-    font-size: 0.95rem;
+    top: 15px;
+
+    font-size:
+      0.95rem;
   }
 
   .contact {
-    top: 45px;
+    top: 65px;
 
-    min-height: 38px;
-    padding: 7px 14px;
+    min-height:
+      32px;
 
-    font-size: 0.86rem;
+    padding:
+      6px 13px;
+
+    font-size:
+      0.82rem;
   }
 
   .footer {
     bottom: 5px;
-    font-size: 0.62rem;
+
+    font-size:
+      0.62rem;
   }
 }
 
