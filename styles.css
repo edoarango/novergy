@@ -65,8 +65,8 @@ body {
   margin: 0 auto 26px;
 
   filter:
-    drop-shadow(0 3px 8px rgba(0, 0, 0, 0.28))
-    drop-shadow(0 10px 24px rgba(0, 0, 0, 0.18));
+    drop-shadow(0 2px 4px rgba(0, 0, 0, 0.32))
+    drop-shadow(0 5px 12px rgba(0, 0, 0, 0.18));
 }
 
 .descriptor {
@@ -154,6 +154,10 @@ body {
   .logo {
     width: min(68.4vw, 351px);
     margin-bottom: 18px;
+
+    filter:
+      drop-shadow(0 2px 4px rgba(0, 0, 0, 0.32))
+      drop-shadow(0 5px 12px rgba(0, 0, 0, 0.18));
   }
 
   .descriptor {
