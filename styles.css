@@ -332,14 +332,13 @@ body {
 
 /* =========================================================
    MÓVILES
-   USA BACKGROUND VERTICAL ESPECÍFICO
+   BACKGROUND VERTICAL ESPECÍFICO
    ========================================================= */
 
 @media (max-width: 640px) {
 
   .hero {
-    min-height:
-      100svh;
+    min-height: 100svh;
 
     background:
       url("background-novergy-mobile.png")
@@ -376,20 +375,25 @@ body {
   }
 
   .contact {
+    /*
+      SUBIDO PARA EVITAR CHOQUE
+      CON LAS BARRAS INFERIORES
+      DE CHROME / EDGE
+    */
     top:
-      clamp(650px, 75vh, 760px);
+      clamp(560px, 66vh, 650px);
 
     max-width:
-      88vw;
+      92vw;
 
     min-height:
-      28px;
+      30px;
 
     padding:
-      5px 13px;
+      5px 12px;
 
     font-size:
-      clamp(0.80rem, 3.4vw, 0.90rem);
+      clamp(0.76rem, 3.2vw, 0.88rem);
 
     line-height:
       1;
@@ -402,11 +406,18 @@ body {
   }
 
   .footer {
+    /*
+      MÁS ARRIBA PARA QUE NO QUEDE
+      TAPADO POR LA UI DEL NAVEGADOR
+    */
     bottom:
-      max(9px, env(safe-area-inset-bottom));
+      max(
+        72px,
+        calc(env(safe-area-inset-bottom) + 18px)
+      );
 
     font-size:
-      0.66rem;
+      0.64rem;
   }
 }
 
@@ -435,21 +446,27 @@ body {
 
   .contact {
     top:
-      clamp(625px, 73vh, 730px);
+      clamp(540px, 64vh, 620px);
 
     max-width:
-      90vw;
+      94vw;
 
     padding:
-      5px 11px;
+      5px 10px;
 
     font-size:
-      0.80rem;
+      0.76rem;
   }
 
   .footer {
+    bottom:
+      max(
+        70px,
+        calc(env(safe-area-inset-bottom) + 16px)
+      );
+
     font-size:
-      0.62rem;
+      0.60rem;
   }
 }
 
@@ -485,7 +502,7 @@ body {
 
   .contact {
     top:
-      345px;
+      330px;
 
     min-height:
       28px;
@@ -499,7 +516,7 @@ body {
 
   .footer {
     bottom:
-      4px;
+      8px;
 
     font-size:
       0.60rem;
