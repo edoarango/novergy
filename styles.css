@@ -176,6 +176,7 @@ body {
   .hero-content {
     width: 94vw;
     padding: 0 18px;
+
     transform: translateY(-1vh);
   }
 
@@ -189,7 +190,7 @@ body {
   }
 
   .descriptor {
-    margin: 0 0 16px;
+    margin: 0;
 
     font-size:
       clamp(0.98rem, 4.7vw, 1.22rem);
@@ -201,6 +202,11 @@ body {
   }
 
   .contact {
+    position: relative;
+
+    /* BAJA EL CALL TO ACTION HACIA LA BASE DEL BOMBILLO */
+    top: clamp(140px, 11vh, 175px);
+
     max-width: 86vw;
     min-height: 42px;
 
@@ -229,6 +235,7 @@ body {
   .hero-content {
     width: 96vw;
     padding: 0 12px;
+
     transform: translateY(-0.5vh);
   }
 
@@ -240,13 +247,14 @@ body {
   .descriptor {
     font-size:
       clamp(0.95rem, 5vw, 1.12rem);
-
-    margin-bottom: 14px;
   }
 
   .contact {
+    top: clamp(130px, 10vh, 160px);
+
     max-width: 90vw;
     padding: 9px 14px;
+
     font-size: 0.88rem;
   }
 
@@ -274,8 +282,12 @@ body {
   }
 
   .contact {
+    position: relative;
+    top: 20px;
+
     min-height: 38px;
     padding: 7px 14px;
+
     font-size: 0.86rem;
   }
 
