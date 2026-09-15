@@ -86,8 +86,8 @@ body {
 .contact {
   position: relative;
 
-  /* BAJA EL CALL TO ACTION EN LAPTOP / DESKTOP */
-  top: 85px;
+  /* CTA BAJADO AL CENTRO DEL CONECTOR ROSCADO */
+  top: 155px;
 
   display: inline-flex;
   align-items: center;
@@ -164,7 +164,7 @@ body {
   }
 
   .contact {
-    top: 105px;
+    top: 145px;
     font-size: 1rem;
   }
 }
@@ -282,7 +282,7 @@ body {
   }
 
   .contact {
-    top: 35px;
+    top: 45px;
 
     min-height: 38px;
     padding: 7px 14px;
