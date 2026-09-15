@@ -37,7 +37,6 @@ body {
     no-repeat;
 }
 
-
 .overlay {
   position: absolute;
   inset: 0;
@@ -50,7 +49,6 @@ body {
     rgba(0, 18, 10, 0.16) 100%
   );
 }
-
 
 .hero-content {
   position: absolute;
@@ -182,7 +180,6 @@ body {
   pointer-events: auto;
 }
 
-
 .contact:hover,
 .contact:focus-visible {
   background:
@@ -191,7 +188,6 @@ body {
   box-shadow:
     0 3px 9px rgba(0, 0, 0, 0.30);
 }
-
 
 .contact:focus-visible {
   outline:
@@ -329,11 +325,6 @@ body {
   }
 
   .hero {
-    /*
-      DVH se adapta a las barras móviles
-      de Chrome, Edge, Samsung Internet, etc.
-    */
-
     height: 100dvh;
     min-height: 100dvh;
 
@@ -376,8 +367,7 @@ body {
 
 
   /* CTA
-     AHORA SE CONTROLA DESDE ABAJO
-     EN VEZ DE DESDE ARRIBA
+     SUBIDO UN POCO MÁS
   */
 
   .contact {
@@ -387,8 +377,8 @@ body {
 
     bottom:
       max(
-        92px,
-        calc(10dvh + env(safe-area-inset-bottom))
+        112px,
+        calc(12dvh + env(safe-area-inset-bottom))
       );
 
     transform:
@@ -413,15 +403,15 @@ body {
   }
 
 
-  /* COPYRIGHT
-     TAMBIÉN ANCLADO DESDE ABAJO
+  /* FOOTER
+     MÁS ABAJO, PERO AÚN SEGURO
   */
 
   .footer {
     bottom:
       max(
-        30px,
-        calc(3dvh + env(safe-area-inset-bottom))
+        38px,
+        calc(4dvh + env(safe-area-inset-bottom))
       );
 
     font-size:
@@ -455,8 +445,8 @@ body {
   .contact {
     bottom:
       max(
-        88px,
-        calc(9dvh + env(safe-area-inset-bottom))
+        106px,
+        calc(11dvh + env(safe-area-inset-bottom))
       );
 
     max-width: 95vw;
@@ -471,8 +461,8 @@ body {
   .footer {
     bottom:
       max(
-        28px,
-        calc(3dvh + env(safe-area-inset-bottom))
+        36px,
+        calc(4dvh + env(safe-area-inset-bottom))
       );
 
     font-size:
@@ -514,7 +504,7 @@ body {
   .contact {
     top: auto;
 
-    bottom: 54px;
+    bottom: 62px;
 
     min-height: 27px;
 
@@ -526,7 +516,7 @@ body {
   }
 
   .footer {
-    bottom: 9px;
+    bottom: 10px;
 
     font-size:
       0.58rem;
