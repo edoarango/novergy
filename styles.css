@@ -18,7 +18,7 @@ body {
 
 
 /* =========================================================
-   BACKGROUND GENERAL
+   BACKGROUND GENERAL - DESKTOP / LAPTOP
    ========================================================= */
 
 .hero {
@@ -110,7 +110,6 @@ body {
 
   left: 50%;
 
-  /* BAJADO UN POCO MÁS ENTRE LOS CUBOS INFERIORES */
   top: clamp(465px, 57vh, 585px);
 
   transform: translateX(-50%);
@@ -149,7 +148,6 @@ body {
 
   left: 50%;
 
-  /* BAJADO LEVEMENTE HACIA EL CENTRO DEL CONECTOR */
   top: clamp(630px, 75vh, 755px);
 
   transform: translateX(-50%);
@@ -159,7 +157,6 @@ body {
   align-items: center;
   justify-content: center;
 
-  /* MÁS DELGADO */
   min-height: 30px;
 
   padding:
@@ -245,7 +242,7 @@ body {
 
 
 /* =========================================================
-   LAPTOPS CON POCA ALTURA DE PANTALLA
+   LAPTOPS CON POCA ALTURA
    ========================================================= */
 
 @media (min-width: 901px) and (max-height: 820px) {
@@ -335,6 +332,7 @@ body {
 
 /* =========================================================
    MÓVILES
+   USA BACKGROUND VERTICAL ESPECÍFICO
    ========================================================= */
 
 @media (max-width: 640px) {
@@ -343,30 +341,32 @@ body {
     min-height:
       100svh;
 
-    background-position:
-      50% center;
+    background:
+      url("background-novergy-mobile.png")
+      center center / cover
+      no-repeat;
   }
 
   .logo {
     top:
-      clamp(70px, 12vh, 120px);
+      clamp(58px, 8vh, 90px);
 
     width:
-      min(64vw, 285px);
+      min(56vw, 245px);
   }
 
   .descriptor {
     top:
-      clamp(420px, 51vh, 520px);
+      clamp(500px, 58vh, 610px);
 
     width:
-      94vw;
+      92vw;
 
     padding:
       0 10px;
 
     font-size:
-      clamp(1rem, 4.7vw, 1.22rem);
+      clamp(0.98rem, 4.3vw, 1.16rem);
 
     line-height:
       1.2;
@@ -377,25 +377,25 @@ body {
 
   .contact {
     top:
-      clamp(565px, 69vh, 675px);
+      clamp(650px, 75vh, 760px);
 
     max-width:
-      90vw;
+      88vw;
 
     min-height:
-      30px;
+      28px;
 
     padding:
       5px 13px;
 
     font-size:
-      clamp(0.80rem, 3.5vw, 0.90rem);
+      clamp(0.80rem, 3.4vw, 0.90rem);
 
     line-height:
       1;
 
     white-space:
-      normal;
+      nowrap;
 
     text-align:
       center;
@@ -406,7 +406,7 @@ body {
       max(9px, env(safe-area-inset-bottom));
 
     font-size:
-      0.68rem;
+      0.66rem;
   }
 }
 
@@ -419,29 +419,29 @@ body {
 
   .logo {
     top:
-      clamp(65px, 11vh, 105px);
+      clamp(52px, 7vh, 80px);
 
     width:
-      min(66vw, 265px);
+      min(58vw, 225px);
   }
 
   .descriptor {
     top:
-      clamp(405px, 50vh, 490px);
+      clamp(485px, 57vh, 585px);
 
     font-size:
-      clamp(0.95rem, 4.9vw, 1.12rem);
+      clamp(0.94rem, 4.6vw, 1.08rem);
   }
 
   .contact {
     top:
-      clamp(540px, 67vh, 640px);
+      clamp(625px, 73vh, 730px);
 
     max-width:
-      92vw;
+      90vw;
 
     padding:
-      5px 12px;
+      5px 11px;
 
     font-size:
       0.80rem;
@@ -449,7 +449,7 @@ body {
 
   .footer {
     font-size:
-      0.64rem;
+      0.62rem;
   }
 }
 
@@ -459,6 +459,13 @@ body {
    ========================================================= */
 
 @media (max-height: 520px) and (orientation: landscape) {
+
+  .hero {
+    background:
+      url("background-novergy.png")
+      center center / cover
+      no-repeat;
+  }
 
   .logo {
     top:
