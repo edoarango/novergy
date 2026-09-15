@@ -3,29 +3,53 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <meta name="description" content="NOVERGY — Energía Reno-Verde, Colombia.">
+  <meta name="theme-color" content="#0a2418">
+
   <title>NOVERGY | Energía Reno-Verde, Colombia</title>
+
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+
   <main class="hero" aria-label="NOVERGY">
+
     <div class="overlay"></div>
 
     <section class="hero-content">
-      <img class="logo" src="assets/logo-novergy.png" alt="NOVERGY">
-      <p class="descriptor">Energía Reno-Verde, Colombia.</p>
-      <a class="contact" href="mailto:info@novergy.co">
+
+      <img
+        class="logo"
+        src="logo-novergy.png"
+        alt="NOVERGY"
+      >
+
+      <p class="descriptor">
+        Energía Reno-Verde, Colombia.
+      </p>
+
+      <a
+        class="contact"
+        href="mailto:info@novergy.co"
+        aria-label="Contactar a NOVERGY por correo electrónico"
+      >
         Contact: info@novergy.co
       </a>
+
     </section>
 
     <footer class="footer">
       © <span id="year">2026</span> NOVERGY S.A.S.
     </footer>
+
   </main>
 
   <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
   </script>
+
 </body>
 </html>
