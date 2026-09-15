@@ -59,7 +59,7 @@ body {
 .logo {
   display: block;
 
-  width: min(45.9vw, 400px);
+  width: min(48.6vw, 423px);
   height: auto;
 
   margin: 0 auto 26px;
@@ -152,7 +152,7 @@ body {
   }
 
   .logo {
-    width: min(64.6vw, 332px);
+    width: min(68.4vw, 351px);
     margin-bottom: 18px;
   }
 
