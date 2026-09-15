@@ -58,8 +58,10 @@ body {
 
 .logo {
   display: block;
-  width: min(54vw, 470px);
+
+  width: min(45.9vw, 400px);
   height: auto;
+
   margin: 0 auto 26px;
 
   filter:
@@ -150,7 +152,7 @@ body {
   }
 
   .logo {
-    width: min(76vw, 390px);
+    width: min(64.6vw, 332px);
     margin-bottom: 18px;
   }
 
