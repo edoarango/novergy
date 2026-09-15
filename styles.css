@@ -43,6 +43,8 @@ body {
 }
 
 .hero-content {
+  position: relative;
+
   width: min(92vw, 900px);
   padding: 0 24px;
   text-align: center;
@@ -60,17 +62,21 @@ body {
    ========================= */
 
 .logo {
-  position: relative;
+  position: absolute;
 
-  /* SUBE EL LOGO HACIA EL CIELO */
-  top: -125px;
+  left: 50%;
+
+  /* SUBE EL LOGO CLARAMENTE A LA ZONA DEL CIELO */
+  top: -245px;
+
+  transform: translateX(-50%);
 
   display: block;
 
   width: min(48.6vw, 423px);
   height: auto;
 
-  margin: 0 auto;
+  margin: 0;
 
   filter:
     drop-shadow(0 2px 4px rgba(0, 0, 0, 0.32))
@@ -85,8 +91,6 @@ body {
 .descriptor {
   position: relative;
 
-  /* BAJA EL TEXTO ENTRE
-     LOS CUBOS INFERIORES */
   top: 75px;
 
   margin: 0;
@@ -110,15 +114,12 @@ body {
 .contact {
   position: relative;
 
-  /* BAJA EL CTA HACIA
-     EL CENTRO DEL CONECTOR */
   top: 185px;
 
   display: inline-flex;
   align-items: center;
   justify-content: center;
 
-  /* BOTÓN MÁS DELGADO */
   min-height: 36px;
 
   padding:
@@ -205,7 +206,7 @@ body {
   }
 
   .logo {
-    top: -95px;
+    top: -190px;
 
     width:
       min(58vw, 390px);
@@ -253,7 +254,7 @@ body {
   }
 
   .logo {
-    top: -85px;
+    top: -155px;
 
     width:
       min(64vw, 285px);
@@ -330,7 +331,7 @@ body {
   }
 
   .logo {
-    top: -70px;
+    top: -135px;
 
     width:
       min(66vw, 270px);
@@ -370,7 +371,7 @@ body {
 @media (max-height: 520px) and (orientation: landscape) {
 
   .logo {
-    top: -35px;
+    top: -85px;
 
     width:
       min(34vw, 250px);
